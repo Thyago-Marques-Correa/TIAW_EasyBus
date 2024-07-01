@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EasyBus">
+    <link rel="shortcut icon" href="../ocorencias/assets/img/Logo EasyBus.png" type="image/x-icon">
+    <title>EasyBus - Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Incidentes</h1>
+            <button id="backButton">Voltar</button>
+        </header>
+        <div class="content">
+            <div class="left-panel">
+                <div class="upload-section">
+                    <label for="fileInput">Anexar Arquivo</label>
+                    <input type="file" id="fileInput">
+                </div>
+                <div class="incident-list" id="incidentList">
+                    <!-- Lista de incidentes será preenchida dinamicamente pelo JavaScript -->
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="form-group">
+                    <label for="recipient">Para:</label>
+                    <input type="text" id="recipient">
+                </div>
+                <div class="form-group">
+                    <label for="response">Resposta:</label>
+                    <textarea id="response"></textarea>
+                </div>
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+        <img src="Logo EasyBus.png" alt="EasyBus" class="logo">
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>
