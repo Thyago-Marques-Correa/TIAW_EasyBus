@@ -1,0 +1,81 @@
+:root {
+    --cor-fundo: black;
+    --cor-texto: white;
+    --cor-destaque: #FF9A00;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+.texto h1,
+.menu a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.logo,
+.texto,
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    justify-content: flex-start;
+}
+
+.menu {
+    justify-content: flex-end;
+}
+
+.texto,
+.menu {
+    color: white;
+}
+
+header nav a {
+    color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: var(--cor-destaque);
+}
+
+.dadosRelatorio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
